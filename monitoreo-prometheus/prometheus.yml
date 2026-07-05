@@ -1,0 +1,29 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets:
+          - "127.0.0.1:9090"
+
+  - job_name: "miniidm-node-exporter"
+    static_configs:
+      - targets:
+          - "192.168.74.11:9100"
+        labels:
+          node: "idm1"
+          role: "ldap-master-kdc-primary-web-ha"
+
+      - targets:
+          - "192.168.74.12:9100"
+        labels:
+          node: "idm2"
+          role: "ldap-replica-kdc-secondary-web-ha"
+
+      - targets:
+          - "192.168.74.20:9100"
+        labels:
+          node: "client"
+          role: "test-client-prometheus"

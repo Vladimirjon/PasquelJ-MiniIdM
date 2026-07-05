@@ -1,0 +1,22 @@
+# Secretos y material sensible
+*.key
+*.key.pem
+*.pem.key
+*.keytab
+krb5.keytab
+http-web.keytab
+stash
+principal
+principal.*
+slave_datatrans
+*.dump
+*.bak
+*.old
+*.p12
+*.pfx
+*.pcap
+*.pcapng
+*.log
+*.out
+*.trace
+
