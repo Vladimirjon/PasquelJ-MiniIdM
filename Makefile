@@ -12,7 +12,7 @@ help:
 
 
 tree:
-	@find . -maxdepth 3 -type f | sort
+	@find . -path './.git' -prune -o -type f | sort
 
 check-client:
 	bash scripts/check-client.sh
