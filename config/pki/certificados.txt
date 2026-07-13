@@ -1,0 +1,117 @@
+============================================================
+ARCHIVO=miniidm-fis-root-ca.cert.pem
+subject=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+issuer=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+serial=52775C000D0A7517C3958EF0D6951AF81405B5EB
+notBefore=Jun 24 16:01:36 2026 GMT
+notAfter=Jun 21 16:01:36 2036 GMT
+--- CLAVE PUBLICA ---
+Signature Algorithm: ecdsa-with-SHA256
+Public Key Algorithm: id-ecPublicKey
+ASN1 OID: prime256v1
+NIST CURVE: P-256
+Signature Algorithm: ecdsa-with-SHA256
+--- SAN ---
+
+============================================================
+ARCHIVO=web-server.cert.pem
+subject=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = web.fis.epn.ec
+issuer=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+serial=703E3A4FDA75170E2B17AD9BB88C9E8F54AC206F
+notBefore=Jun 24 16:01:36 2026 GMT
+notAfter=Sep 26 16:01:36 2028 GMT
+--- CLAVE PUBLICA ---
+Signature Algorithm: ecdsa-with-SHA256
+Public Key Algorithm: id-ecPublicKey
+ASN1 OID: prime256v1
+NIST CURVE: P-256
+Signature Algorithm: ecdsa-with-SHA256
+--- SAN ---
+X509v3 Subject Alternative Name: 
+    DNS:web.fis.epn.ec, DNS:idm1.fis.epn.ec, DNS:idm2.fis.epn.ec, DNS:localhost, IP Address:192.168.74.100, IP Address:192.168.74.11, IP Address:192.168.74.12, IP Address:127.0.0.1
+
+============================================================
+ARCHIVO=ldap-server.cert.pem
+subject=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = ldap.fis.epn.ec
+issuer=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+serial=703E3A4FDA75170E2B17AD9BB88C9E8F54AC206E
+notBefore=Jun 24 16:01:36 2026 GMT
+notAfter=Sep 26 16:01:36 2028 GMT
+--- CLAVE PUBLICA ---
+Signature Algorithm: ecdsa-with-SHA256
+Public Key Algorithm: id-ecPublicKey
+ASN1 OID: prime256v1
+NIST CURVE: P-256
+Signature Algorithm: ecdsa-with-SHA256
+--- SAN ---
+X509v3 Subject Alternative Name: 
+    DNS:ldap.fis.epn.ec, DNS:ldap1.fis.epn.ec, DNS:ldap2.fis.epn.ec, DNS:idm1.fis.epn.ec, DNS:idm2.fis.epn.ec, DNS:localhost, IP Address:192.168.74.100, IP Address:192.168.74.11, IP Address:192.168.74.12, IP Address:127.0.0.1
+
+============================================================
+ARCHIVO=kdc1.cert.pem
+subject=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = kdc1.fis.epn.ec
+issuer=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+serial=703E3A4FDA75170E2B17AD9BB88C9E8F54AC2070
+notBefore=Jun 24 16:01:36 2026 GMT
+notAfter=Sep 26 16:01:36 2028 GMT
+--- CLAVE PUBLICA ---
+Signature Algorithm: ecdsa-with-SHA256
+Public Key Algorithm: id-ecPublicKey
+ASN1 OID: prime256v1
+NIST CURVE: P-256
+Signature Algorithm: ecdsa-with-SHA256
+--- SAN ---
+X509v3 Subject Alternative Name: 
+    DNS:kdc1.fis.epn.ec, DNS:idm1.fis.epn.ec, IP Address:192.168.74.11
+
+============================================================
+ARCHIVO=kdc2.cert.pem
+subject=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = kdc2.fis.epn.ec
+issuer=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+serial=703E3A4FDA75170E2B17AD9BB88C9E8F54AC2071
+notBefore=Jun 24 16:01:36 2026 GMT
+notAfter=Sep 26 16:01:36 2028 GMT
+--- CLAVE PUBLICA ---
+Signature Algorithm: ecdsa-with-SHA256
+Public Key Algorithm: id-ecPublicKey
+ASN1 OID: prime256v1
+NIST CURVE: P-256
+Signature Algorithm: ecdsa-with-SHA256
+--- SAN ---
+X509v3 Subject Alternative Name: 
+    DNS:kdc2.fis.epn.ec, DNS:idm2.fis.epn.ec, IP Address:192.168.74.12
+
+============================================================
+ARCHIVO=idm1.cert.pem
+subject=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = idm1.fis.epn.ec
+issuer=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+serial=703E3A4FDA75170E2B17AD9BB88C9E8F54AC2072
+notBefore=Jun 24 16:01:37 2026 GMT
+notAfter=Sep 26 16:01:37 2028 GMT
+--- CLAVE PUBLICA ---
+Signature Algorithm: ecdsa-with-SHA256
+Public Key Algorithm: id-ecPublicKey
+ASN1 OID: prime256v1
+NIST CURVE: P-256
+Signature Algorithm: ecdsa-with-SHA256
+--- SAN ---
+X509v3 Subject Alternative Name: 
+    DNS:idm1.fis.epn.ec, DNS:ldap1.fis.epn.ec, DNS:kdc1.fis.epn.ec, IP Address:192.168.74.11
+
+============================================================
+ARCHIVO=idm2.cert.pem
+subject=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = idm2.fis.epn.ec
+issuer=C = EC, ST = Pichincha, L = Quito, O = EPN, OU = FIS, CN = MiniIdM FIS Root CA ECDSA
+serial=703E3A4FDA75170E2B17AD9BB88C9E8F54AC2073
+notBefore=Jun 24 16:01:37 2026 GMT
+notAfter=Sep 26 16:01:37 2028 GMT
+--- CLAVE PUBLICA ---
+Signature Algorithm: ecdsa-with-SHA256
+Public Key Algorithm: id-ecPublicKey
+ASN1 OID: prime256v1
+NIST CURVE: P-256
+Signature Algorithm: ecdsa-with-SHA256
+--- SAN ---
+X509v3 Subject Alternative Name: 
+    DNS:idm2.fis.epn.ec, DNS:ldap2.fis.epn.ec, DNS:kdc2.fis.epn.ec, IP Address:192.168.74.12
+

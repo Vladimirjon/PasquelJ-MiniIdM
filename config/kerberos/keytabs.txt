@@ -1,0 +1,55 @@
+[idm1]
+=== KEYTABS PRESENTES EN IDM1 ===
+/etc/apache2/http-web.keytab
+/etc/krb5kdc/kadm5.keytab
+/etc/krb5.keytab
+
+=== CONTENIDO PUBLICABLE ===
+
+--- /etc/apache2/http-web.keytab ---
+Keytab name: FILE:/etc/apache2/http-web.keytab
+KVNO Timestamp         Principal
+---- ----------------- --------------------------------------------------------
+   2 24/06/26 23:22:36 HTTP/web.fis.epn.ec@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 23:22:36 HTTP/web.fis.epn.ec@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 
+
+--- /etc/krb5kdc/kadm5.keytab ---
+Keytab name: FILE:/etc/krb5kdc/kadm5.keytab
+KVNO Timestamp         Principal
+---- ----------------- --------------------------------------------------------
+   2 24/06/26 21:10:23 kadmin/admin@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 21:10:23 kadmin/admin@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 
+   2 24/06/26 21:10:23 kadmin/changepw@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 21:10:23 kadmin/changepw@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 
+
+--- /etc/krb5.keytab ---
+Keytab name: FILE:/etc/krb5.keytab
+KVNO Timestamp         Principal
+---- ----------------- --------------------------------------------------------
+   2 24/06/26 21:33:54 host/idm1.fis.epn.ec@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 21:33:54 host/idm1.fis.epn.ec@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 
+   2 24/06/26 21:33:54 host/kdc1.fis.epn.ec@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 21:33:54 host/kdc1.fis.epn.ec@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 
+
+[idm2]
+=== KEYTABS PRESENTES EN IDM2 ===
+/etc/apache2/http-web.keytab
+/etc/krb5.keytab
+
+=== CONTENIDO PUBLICABLE ===
+
+--- /etc/apache2/http-web.keytab ---
+Keytab name: FILE:/etc/apache2/http-web.keytab
+KVNO Timestamp         Principal
+---- ----------------- --------------------------------------------------------
+   2 24/06/26 23:22:36 HTTP/web.fis.epn.ec@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 23:22:36 HTTP/web.fis.epn.ec@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 
+
+--- /etc/krb5.keytab ---
+Keytab name: FILE:/etc/krb5.keytab
+KVNO Timestamp         Principal
+---- ----------------- --------------------------------------------------------
+   2 24/06/26 21:34:01 host/idm2.fis.epn.ec@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 21:34:01 host/idm2.fis.epn.ec@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 
+   2 24/06/26 21:34:01 host/kdc2.fis.epn.ec@FIS.EPN.EC (aes256-cts-hmac-sha1-96) 
+   2 24/06/26 21:34:01 host/kdc2.fis.epn.ec@FIS.EPN.EC (aes128-cts-hmac-sha1-96) 

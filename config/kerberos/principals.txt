@@ -1,0 +1,17 @@
+dnoboa@FIS.EPN.EC
+emafla@FIS.EPN.EC
+host/idm1.fis.epn.ec@FIS.EPN.EC
+host/idm2.fis.epn.ec@FIS.EPN.EC
+host/kdc1.fis.epn.ec@FIS.EPN.EC
+host/kdc2.fis.epn.ec@FIS.EPN.EC
+HTTP/web.fis.epn.ec@FIS.EPN.EC
+jperez@FIS.EPN.EC
+jrueda@FIS.EPN.EC
+kadmin/admin@FIS.EPN.EC
+kadmin/changepw@FIS.EPN.EC
+K/M@FIS.EPN.EC
+krbtgt/FIS.EPN.EC@FIS.EPN.EC
+ldap/ldap1.fis.epn.ec@FIS.EPN.EC
+ldap/ldap.fis.epn.ec@FIS.EPN.EC
+malvan@FIS.EPN.EC
+replica-test@FIS.EPN.EC

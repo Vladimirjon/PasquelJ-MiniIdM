@@ -1,0 +1,4 @@
+2026-07-13 00:46:19.866781 apache2.service: Main process exited, code=killed, status=9/KILL
+2026-07-13 00:46:20.093389 apache2.service: Scheduled restart job, restart counter is at 1
+2026-07-13 00:46:20.162610 apache2.service: Started
+RECUPERACION_LOCAL_MS=295.829

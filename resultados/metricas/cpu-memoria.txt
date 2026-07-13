@@ -1,0 +1,13 @@
+=== METRICAS CPU Y MEMORIA ===
+FECHA=2026-07-13 HORA=00:00:46
+
+=== CPU_USO_PORCENTAJE ===
+node=client instance=192.168.74.20:9100     value=10.39%
+node=idm1   instance=192.168.74.11:9100     value=5.62%
+node=idm2   instance=192.168.74.12:9100     value=13.87%
+
+=== MEMORIA_USO_PORCENTAJE ===
+node=client instance=192.168.74.20:9100     value=20.10%
+node=idm1   instance=192.168.74.11:9100     value=18.37%
+node=idm2   instance=192.168.74.12:9100     value=18.43%
+

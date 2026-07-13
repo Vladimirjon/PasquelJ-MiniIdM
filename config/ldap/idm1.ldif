@@ -1,0 +1,29 @@
+# idm1.ldif
+# No contiene contraseñas, hashes ni claves privadas.
+
+# === TLS GLOBAL ===
+dn: cn=config
+olcTLSCACertificateFile: /etc/ldap/tls/ca.cert.pem
+olcTLSCertificateFile: /etc/ldap/tls/ldap-server.cert.pem
+olcTLSCertificateKeyFile: /etc/ldap/tls/ldap-server.key.pem
+
+
+# === BASE DE DATOS DEL DIT ===
+dn: olcDatabase={1}mdb,cn=config
+olcDbDirectory: /var/lib/ldap
+olcSuffix: dc=fis,dc=epn,dc=ec
+olcAccess: {0}to attrs=userPassword by self write by anonymous auth by * none
+olcAccess: {1}to attrs=shadowLastChange by self write by * read
+olcAccess: {2}to * by * read
+olcRootDN: cn=admin,dc=fis,dc=epn,dc=ec
+olcDbIndex: objectClass eq
+olcDbIndex: cn,uid eq
+olcDbIndex: uidNumber,gidNumber eq
+olcDbIndex: member,memberUid eq
+
+
+# === OVERLAY SYNCPROV ===
+dn: olcOverlay={0}syncprov,olcDatabase={1}mdb,cn=config
+olcOverlay: {0}syncprov
+olcSpSessionlog: 100
+

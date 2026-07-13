@@ -1,0 +1,139 @@
+dn: dc=fis,dc=epn,dc=ec
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+dc: fis
+
+dn: ou=dicc,dc=fis,dc=epn,dc=ec
+objectClass: organizationalUnit
+ou: dicc
+
+dn: ou=sic,dc=fis,dc=epn,dc=ec
+objectClass: organizationalUnit
+ou: sic
+
+dn: ou=ic,dc=fis,dc=epn,dc=ec
+objectClass: organizationalUnit
+ou: ic
+
+dn: ou=Empleados,ou=dicc,dc=fis,dc=epn,dc=ec
+objectClass: organizationalUnit
+ou: Empleados
+
+dn: ou=Profesores,ou=dicc,dc=fis,dc=epn,dc=ec
+objectClass: organizationalUnit
+ou: Profesores
+
+dn: ou=sem1,ou=sic,dc=fis,dc=epn,dc=ec
+objectClass: organizationalUnit
+ou: sem1
+
+dn: ou=Grupos,dc=fis,dc=epn,dc=ec
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: cn=profesores,ou=Grupos,dc=fis,dc=epn,dc=ec
+objectClass: posixGroup
+cn: profesores
+gidNumber: 5000
+memberUid: emafla
+
+dn: cn=empleados,ou=Grupos,dc=fis,dc=epn,dc=ec
+objectClass: posixGroup
+cn: empleados
+gidNumber: 6000
+memberUid: dnoboa
+
+dn: cn=estudiantes,ou=Grupos,dc=fis,dc=epn,dc=ec
+objectClass: posixGroup
+cn: estudiantes
+gidNumber: 7000
+memberUid: jrueda
+memberUid: jperez
+memberUid: malvan
+
+dn: uid=emafla,ou=Profesores,ou=dicc,dc=fis,dc=epn,dc=ec
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: emafla
+sn: Profesor
+cn: Profesor FIS
+uidNumber: 5001
+gidNumber: 5000
+homeDirectory: /home/emafla
+loginShell: /bin/bash
+mail: emafla@fis.epn.ec
+
+dn: uid=jrueda,ou=sem1,ou=sic,dc=fis,dc=epn,dc=ec
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: jrueda
+sn: Estudiante
+cn: Estudiante 1
+uidNumber: 7001
+gidNumber: 7000
+homeDirectory: /home/jrueda
+loginShell: /bin/bash
+mail: jrueda@fis.epn.ec
+
+dn: uid=jperez,ou=sem1,ou=sic,dc=fis,dc=epn,dc=ec
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: jperez
+sn: Estudiante
+cn: Estudiante 2
+uidNumber: 7002
+gidNumber: 7000
+homeDirectory: /home/jperez
+loginShell: /bin/bash
+mail: jperez@fis.epn.ec
+
+dn: uid=malvan,ou=sem1,ou=sic,dc=fis,dc=epn,dc=ec
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: malvan
+sn: Estudiante
+cn: Estudiante 3
+uidNumber: 7003
+gidNumber: 7000
+homeDirectory: /home/malvan
+loginShell: /bin/bash
+mail: malvan@fis.epn.ec
+
+dn: uid=dnoboa,ou=Empleados,ou=dicc,dc=fis,dc=epn,dc=ec
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: dnoboa
+sn: Empleado
+uidNumber: 6001
+gidNumber: 6000
+homeDirectory: /home/dnoboa
+loginShell: /bin/bash
+mail: dnoboa@fis.epn.ec
+cn: Empleado FIS
+
+dn: cn=replicator,dc=fis,dc=epn,dc=ec
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: replicator
+description: Cuenta tecnica para replicacion LDAP idm1 a idm2
+
+dn: uid=replica-test,ou=sem1,ou=sic,dc=fis,dc=epn,dc=ec
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: replica-test
+sn: Replica
+cn: Usuario Prueba Replica
+uidNumber: 7999
+gidNumber: 7000
+homeDirectory: /home/replica-test
+loginShell: /bin/bash
+mail: replica-test@fis.epn.ec
+description: Cuenta de prueba de replicacion
+
